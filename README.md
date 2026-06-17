@@ -1,2 +1,10 @@
 # Zodiac-Calculator
-This is my first Python project. Its purpose is to help someone figure out their zodiac sign by entering their date of birth.
+Project Title: Zodiac Calculator
+Video Demo: https://youtu.be/1vTi3IGP0OM
+06/17/26
+This is my first Python project. Its purpose is to help someone figure out their zodiac sign by entering their date of birth in month/day format. At the beginning of the code, you'll see the first function establishes that the user enters the month of their birth, followed by the day. That information is then ran through a second function, known as the validation function. This part of the code validates that the user input that was entered, correctly corresponds to the standard numerical format of birthdays. It does this by validating that the month integer is no less than the integer 1, and no more than the integer 12. This is becuase there is no Month that exists that is less than 1 (January) and more than 12 (December). If a month integer that is less than 1 or more than 12 is entered, the program will return FALSE.
+Next, you will see a "days_in_month" dictionary. This dictionary validates the particular number of days that are in each month. For instance, if you entered 6(JUNE) for your birth month, and 31 for the DAY of your birth, it will return invalid user input, since there are only 30 days in June, as stated in the dictionary.
+The next function Zodiac_Calculation, is where the program takes the correct user input, and calculates your zodiac sign. The function calculates your zodiac by running your birth month and day, through specific parameters established by each zodiac sign. For instance, the Aries Zodiac sign on the first line, states that if your month is 3 (MARCH), and the day is greater than or equal to 21 OR your month is 4(April) and day is Less than or equal to 19, you will return "Aries" ELSE, it will return Invalid date.
+Next, comes our main function in the program at the end. It compiles the parameters we have set, and establishes your Zodiac sign. It assigns the month,day to the retrieve_DOB function, and if it is not ran correctly through the validaiton function that we established, it will return "Invalid user input".
+Otherwise, if all parameters are met and correct within each month and day, it will correctly display your Zodiac Sign
+
